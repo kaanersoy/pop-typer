@@ -3,7 +3,7 @@
 App for impove your typing skills.
 
 ### 🔴 Demo 
-You can visit the demo from: [pop-typer]()
+You can visit the demo from: [pop-typer](https://pop-typer.vercel.app/)
 
 ## 📦 Installation
 
