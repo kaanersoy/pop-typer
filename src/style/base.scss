@@ -1,0 +1,30 @@
+// Variables
+$basicFontSize: 16px;
+
+h1{
+	font-size: $basicFontSize * 6;
+}
+h2{
+	font-size: $basicFontSize * 5;
+}
+h3{
+	font-size: $basicFontSize * 4;
+}
+h4{
+	font-size: $basicFontSize * 3;
+}
+h6{
+	font-size: $basicFontSize * 2;
+}
+
+body{
+	font-family: 'Inter', sans-serif;
+}
+
+.key{
+  color: blue;
+  &.success{
+    color: green;
+  }
+}
+
