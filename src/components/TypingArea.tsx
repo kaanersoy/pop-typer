@@ -1,6 +1,6 @@
 import React, { ReactElement, useEffect, useState } from "react";
 import { validateGameEnding, validateOnTyping } from "../utils/typingUtils";
-import { getRandomWords } from "../utils/words";
+import { getRandomWordsFromLocal } from "../utils/words";
 import { isArrayFilled } from "../utils/common";
 import "../style/typing-area.scss";
 
@@ -13,7 +13,7 @@ function TypingArea() {
   const target = words[wordOrder];
 
   const fetchWords = async () => {
-    const data = await getRandomWords();
+    const data = await getRandomWordsFromLocal(10);
     setWords(data);
   };
 
