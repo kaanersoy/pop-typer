@@ -1,5 +1,4 @@
-// Variables
-$basicFontSize: 16px;
+@import "./variables";
 
 h1{
 	font-size: $basicFontSize * 6;
@@ -22,9 +21,18 @@ body{
 }
 
 .key{
-  color: blue;
+  color: rgb(78, 78, 78);
   &.success{
-    color: green;
+    color: #eb4d4b;
   }
 }
 
+body{
+	background-color: $blue;
+}
+
+.container{
+	width: $bodyWidth;
+	margin: 0 auto;
+	max-width: 90%;
+}

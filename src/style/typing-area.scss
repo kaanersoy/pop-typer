@@ -1,0 +1,31 @@
+@import "./variables";
+
+.poptyper{
+  &-poppedcount{
+    text-align: center;
+    margin: 1rem 0;
+  }
+  &-word{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80px;
+  }
+  &-input{
+    font-size: $basicFontSize * 3;
+    color: $black;
+    input{
+      margin-top: 30px;
+      width: 100%;
+      font: inherit;
+      padding: 16px;
+      border-color: rgba($color: $black, $alpha: 0.3);
+      border-radius: 20px;
+      background-color: transparent;
+      &:focus{
+        outline: none;
+      }
+    }
+  }
+}

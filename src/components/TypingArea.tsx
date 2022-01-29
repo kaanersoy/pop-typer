@@ -2,6 +2,7 @@ import React, { ReactElement, useEffect, useState } from "react";
 import { validateGameEnding, validateOnTyping } from "../utils/typingUtils";
 import { getRandomWords } from "../utils/words";
 import { isArrayFilled } from "../utils/common";
+import "../style/typing-area.scss";
 
 function TypingArea() {
   const [wordOrder, setWordOrder] = useState(0);
@@ -68,7 +69,9 @@ function TypingArea() {
           {createWordSpans()}
         </h3>
       </div>
-      <input type="text" value={writedWord} onChange={(e) => setWritedWord(e.target.value)} />
+      <div className="poptyper-input container">
+        <input type="text" value={writedWord} onChange={(e) => setWritedWord(e.target.value)} />
+      </div>
     </>
   );
 }

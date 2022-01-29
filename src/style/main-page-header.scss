@@ -1,3 +1,15 @@
-.poptyper-header{
+@import "./variables";
+
+.poptyper{
   text-align: center;
+  &-header{
+    &-title{
+      width: 250px;
+      margin: 20px auto;
+      
+      img{
+        width: 100%;
+      }
+    }
+  }
 }
