@@ -4,13 +4,15 @@ export const validateOnTyping = (
   onSuccess: () => void,
   onFailure: () => void,
 ) => {
-  const isValidationOk = target.includes(writedWord);
+  const splittedWritedWord = writedWord.split("");
+  const hasFailure = splittedWritedWord.some((key, index) => key !== target[index]);
+
   const isPopSucces = target === writedWord;
-  if (isPopSucces && isValidationOk) {
+  if (isPopSucces && !hasFailure) {
     onSuccess();
     return;
   }
-  if (!isValidationOk) {
+  if (hasFailure) {
     onFailure();
   }
 };
